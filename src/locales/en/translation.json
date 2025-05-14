@@ -1,0 +1,78 @@
+{
+  "header": {
+    "home": "HOME",
+    "ourServices": "OUR SERVICES",
+    "about": "ABOUT",
+    "location": "LOCATION",
+    "contactUs": "CONTACT US"
+  },
+  "hero": {
+    "title": "Best Scrap Buyers in Dammam",
+    "subtitle": "Get the best prices for your scrap metal, electronics, and industrial waste. Professional, reliable, and environmentally conscious service.",
+    "cta": "Get a Quote Today"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "We provide an extensive array of scrap buying services, working diligently to ensure our clients receive the maximum value for their scrap materials. Our commitment goes beyond mere transactions; we focus on delivering exceptional quality, cost-effective solutions, and trustworthy service, all while ensuring timely execution to meet our clients' needs.",
+    "learnMore": "LEARN MORE"
+  },
+  "services": {
+    "title": "Our Scrape Buying Services",
+    "subtitle": "We specialize in buying various types of scrap materials. Our professional team ensures fair pricing and efficient collection services for all your scrap needs.",
+    "items": {
+      "ac": {
+        "title": "Air Condition Scrap",
+        "description": "We buy air condition scrap, including old or broken units with copper, aluminum, and steel."
+      },
+      "aluminium": {
+        "title": "Aluminium Scrap",
+        "description": "We buy aluminum scrap, including used or discarded aluminum materials."
+      }
+    }
+  },
+  "whyChooseUs": {
+    "title": "WHY CHOOSE US?",
+    "subtitle": "Scrap Buyer a leading, Top and Best Scrap Buyer, purchaser in the city of Dammam.",
+    "features": {
+      "prices": {
+        "title": "Best Prices for Your Scrap",
+        "description": "We offer top market rates for all types of scrap materials."
+      },
+      "service": {
+        "title": "Fast and Hassle-Free Service",
+        "description": "Our process is quick and easy! From contact to collection, we handle everything."
+      },
+      "eco": {
+        "title": "Eco-Friendly and Responsible",
+        "description": "By selling your scrap to us, you contribute to recycling and environmental sustainability."
+      }
+    }
+  },
+  "reviews": {
+    "title": "Client Reviews",
+    "subtitle": "What our valued customers say about our services",
+    "seeMore": "See More",
+    "showLess": "Show Less"
+  },
+  "location": {
+    "title": "Our Location",
+    "description": "Visit us at our convenient location in Dammam. We're easily accessible and ready to serve you."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Your Message",
+      "submit": "Send Message"
+    },
+    "info": {
+      "phone": "Phone",
+      "email": "Email",
+      "location": "Location"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Scrap Buyer Dammam. All rights reserved."
+  }
+} 

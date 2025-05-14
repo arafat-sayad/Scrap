@@ -16,15 +16,12 @@ import {
   MessageSquare,
   Menu,
   X,
+  Globe,
 } from "lucide-react";
+import { useTranslation } from 'react-i18next';
+import "./i18n";
 import "./custom.css";
-import heroImage from "./assets/scarp-hero-1.webp";
-
-// Declare module for image imports
-declare module "*.png" {
-  const value: string;
-  export default value;
-}
+import heroImage from "./assets/scrap-hero.webp";
 
 // @ts-ignore
 import officeDismantledScrapImage from "./assets/Office-Dismantled-Scrap-V3.png";
@@ -52,6 +49,7 @@ import portaCabinScrapImage from "./assets/pcabinabudhabi2.jpg";
 import nahazScrapImage from "./assets/Aluminum.webp";
 
 function App() {
+  const { t, i18n } = useTranslation();
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -63,6 +61,19 @@ function App() {
     email: '',
     message: ''
   });
+
+  const toggleLanguage = () => {
+    const newLang = i18n.language === 'ar' ? 'en' : 'ar';
+    i18n.changeLanguage(newLang);
+    document.documentElement.dir = newLang === 'ar' ? 'rtl' : 'ltr';
+    document.documentElement.lang = newLang;
+  };
+
+  useEffect(() => {
+    // Set initial direction and language
+    document.documentElement.dir = i18n.language === 'ar' ? 'rtl' : 'ltr';
+    document.documentElement.lang = i18n.language;
+  }, [i18n.language]);
 
   const reviews = [
     {
@@ -261,7 +272,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className={`min-h-screen bg-white ${i18n.language === 'ar' ? 'font-arabic' : ''}`}>
       {/* Main Header - Now Sticky */}
       <header
         className={`bg-[#3f51b5] text-white py-4 header-shadow sticky top-0 z-50 transition-all duration-300 ${
@@ -275,6 +286,15 @@ function App() {
                 SBD
               </h1>
             </div>
+
+            {/* Language Switcher */}
+            <button
+              onClick={toggleLanguage}
+              className="p-2 hover:bg-blue-700 rounded-full transition-colors mr-4"
+              aria-label="Toggle language"
+            >
+              <Globe className="h-6 w-6" />
+            </button>
 
             {/* Mobile Menu Button */}
             <button
@@ -295,31 +315,31 @@ function App() {
                 href="#"
                 className="nav-link font-medium hover:text-gray-200 transition-colors"
               >
-                HOME
+                {t('header.home')}
               </a>
               <a
                 href="#our-services"
                 className="nav-link font-medium hover:text-gray-200 transition-colors"
               >
-                OUR SERVICES
+                {t('header.ourServices')}
               </a>
               <a
                 href="#about"
                 className="nav-link font-medium hover:text-gray-200 transition-colors"
               >
-                ABOUT
+                {t('header.about')}
               </a>
               <a
                 href="#location"
                 className="nav-link font-medium hover:text-gray-200 transition-colors"
               >
-                LOCATION
+                {t('header.location')}
               </a>
               <a
                 href="#contact"
                 className="contact-button px-6 py-2 rounded font-medium text-white hover:bg-red-700 transition-all"
               >
-                CONTACT US
+                {t('header.contactUs')}
               </a>
             </nav>
           </div>
@@ -335,35 +355,35 @@ function App() {
               className="w-full text-center py-2 hover:bg-blue-700 transition-colors"
               onClick={toggleMenu}
             >
-              HOME
+              {t('header.home')}
             </a>
             <a
               href="#our-services"
               className="w-full text-center py-2 hover:bg-blue-700 transition-colors"
               onClick={toggleMenu}
             >
-              OUR SERVICES
+              {t('header.ourServices')}
             </a>
             <a
               href="#about"
               className="w-full text-center py-2 hover:bg-blue-700 transition-colors"
               onClick={toggleMenu}
             >
-              ABOUT
+              {t('header.about')}
             </a>
             <a
               href="#location"
               className="w-full text-center py-2 hover:bg-blue-700 transition-colors"
               onClick={toggleMenu}
             >
-              LOCATION
+              {t('header.location')}
             </a>
             <a
               href="#contact"
               className="w-full text-center py-2 bg-red-600 hover:bg-red-700 transition-colors"
               onClick={toggleMenu}
             >
-              CONTACT US
+              {t('header.contactUs')}
             </a>
           </nav>
         </div>
@@ -381,18 +401,16 @@ function App() {
         <div className="relative container mx-auto px-4 md:px-6 py-24 md:py-48 flex items-center min-h-[90vh]">
           <div className="max-w-4xl">
             <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
-              Best Scrap Buyers in Dammam
+              {t('hero.title')}
             </h2>
             <p className="text-base md:text-lg lg:text-xl mb-8 md:mb-10 max-w-3xl">
-              Get the best prices for your scrap metal, electronics, and
-              industrial waste. Professional, reliable, and environmentally
-              conscious service.
+              {t('hero.subtitle')}
             </p>
             <a
               href="#contact"
               className="inline-block bg-green-600 text-white px-6 md:px-8 py-3 md:py-4 rounded-full text-base md:text-lg font-semibold hover:bg-green-700 transition-all transform hover:scale-105 shadow-lg"
             >
-              Get a Quote Today
+              {t('hero.cta')}
             </a>
           </div>
         </div>
