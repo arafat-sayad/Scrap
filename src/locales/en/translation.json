@@ -1,10 +1,10 @@
 {
   "header": {
-    "home": "HOME",
-    "ourServices": "OUR SERVICES",
-    "about": "ABOUT",
-    "location": "LOCATION",
-    "contactUs": "CONTACT US"
+    "home": "Home",
+    "ourServices": "Our Services",
+    "about": "About",
+    "location": "Location",
+    "contactUs": "Contact Us"
   },
   "hero": {
     "title": "Best Scrap Buyers in Dammam",
@@ -17,8 +17,8 @@
     "learnMore": "LEARN MORE"
   },
   "services": {
-    "title": "Our Scrape Buying Services",
-    "subtitle": "We specialize in buying various types of scrap materials. Our professional team ensures fair pricing and efficient collection services for all your scrap needs.",
+    "title": "Our Scrap Buying Services",
+    "subtitle": "We specialize in buying various types of scrap materials. Our professional team ensures fair pricing and efficient collection services for all your scrap needs",
     "items": {
       "ac": {
         "title": "Air Condition Scrap",
@@ -27,6 +27,46 @@
       "aluminium": {
         "title": "Aluminium Scrap",
         "description": "We buy aluminum scrap, including used or discarded aluminum materials."
+      },
+      "battery": {
+        "title": "Battery Scrap",
+        "description": "We buy battery scrap, including used or discarded batteries."
+      },
+      "building": {
+        "title": "Building Demolition Scrap",
+        "description": "We buy building demolition scrap, including concrete, metal, and other materials from demolition projects."
+      },
+      "machinery": {
+        "title": "Old Machinery Scrap",
+        "description": "We buy old machinery scrap, including equipment and parts, offering competitive prices and reliable service."
+      },
+      "panels": {
+        "title": "Panel Boards Scrap",
+        "description": "We buy panel boards scrap, including electrical panels and circuit boards, offering competitive prices and fast service."
+      },
+      "pipes": {
+        "title": "Pipe Scrap",
+        "description": "We buy pipe scrap, including metal and plastic pipes, offering competitive prices and reliable service."
+      },
+      "portacabin": {
+        "title": "Porta Cabin Scrap",
+        "description": "We buy porta cabin scrap, offering competitive prices and fast service for all types of cabin materials."
+      },
+      "copper": {
+        "title": "Copper Scrap",
+        "description": "We buy all types of copper scrap, including wires, pipes, and sheets, offering competitive prices and prompt service."
+      },
+      "electronic": {
+        "title": "E-Scrap",
+        "description": "We buy all types of e-scrap, including old electronics and devices, offering competitive prices and fast service."
+      },
+      "nahaz": {
+        "title": "Nahaz Scrap",
+        "description": "We buy all types of nahaz scrap, offering competitive prices and reliable service for sellers."
+      },
+      "office": {
+        "title": "Office Scrap",
+        "description": "We buy office scrap, including furniture, equipment, and other materials, offering competitive prices and fast service."
       }
     }
   },
@@ -34,6 +74,14 @@
     "title": "WHY CHOOSE US?",
     "subtitle": "Scrap Buyer a leading, Top and Best Scrap Buyer, purchaser in the city of Dammam.",
     "features": {
+      "onCall": "On Call Facility",
+      "freePickup": "FREE Pick Up",
+      "support": "24x7 Support",
+      "hassleFree": "Hassle Free",
+      "evaluation": "Proper Evaluation",
+      "consultation": "Professional Consultation",
+      "solutions": "Customized Solutions",
+      "experience": "Great Experience",
       "prices": {
         "title": "Best Prices for Your Scrap",
         "description": "We offer top market rates for all types of scrap materials."
@@ -46,7 +94,35 @@
         "title": "Eco-Friendly and Responsible",
         "description": "By selling your scrap to us, you contribute to recycling and environmental sustainability."
       }
-    }
+    },
+    "learnMore": "Learn More"
+  },
+  "whyChooseUsServices": {
+    "title": "WHY CHOOSE US OUR SERVICES?",
+    "subtitle": "Scrap Buyer a leading, Top and Best Scrap Buyer, purchaser in the city of Dammam.",
+    "features": {
+      "onCall": "On Call Facility",
+      "freePickup": "FREE Pick Up",
+      "support": "24x7 Support",
+      "hassleFree": "Hassle Free",
+      "evaluation": "Proper Evaluation",
+      "consultation": "Professional Consultation",
+      "solutions": "Customized Solutions",
+      "experience": "Great Experience",
+      "prices": {
+        "title": "Best Prices for Your Scrap",
+        "description": "We offer top market rates for all types of scrap materials."
+      },
+      "service": {
+        "title": "Fast and Hassle-Free Service",
+        "description": "Our process is quick and easy! From contact to collection, we handle everything."
+      },
+      "eco": {
+        "title": "Eco-Friendly and Responsible",
+        "description": "By selling your scrap to us, you contribute to recycling and environmental sustainability."
+      }
+    },
+    "learnMore": "Learn More"
   },
   "reviews": {
     "title": "Client Reviews",
@@ -60,19 +136,21 @@
   },
   "contact": {
     "title": "Contact Us",
+    "info": {
+      "phone": "Phone",
+      "phone_number": "+966 056 564 7357",
+      "email": "Email",
+      "location": "Location",
+      "address": "Industrial Area 2, Dammam, Saudi Arabia"
+    },
     "form": {
       "name": "Your Name",
       "email": "Your Email",
       "message": "Your Message",
       "submit": "Send Message"
-    },
-    "info": {
-      "phone": "Phone",
-      "email": "Email",
-      "location": "Location"
     }
   },
   "footer": {
-    "copyright": "© 2025 Scrap Buyer Dammam. All rights reserved."
+    "copyright": "© 2025 SBD - Best Scrap Buyers in Dammam. All rights reserved."
   }
 } 
