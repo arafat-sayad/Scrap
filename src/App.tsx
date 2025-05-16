@@ -81,70 +81,70 @@ function App() {
     {
       name: "Rahim",
       subtitle: "ان عده",
-      image: "https://placehold.co/100x100",
+      image: "https://randomuser.me/api/portraits/men/41.jpg",
       text: "This is great!.Outstanding service! They helped clear out my entire warehouse of scrap materials. Very organized and professional approach. The best part was their quick payment process.",
       rating: 5
     },
     {
       name: "Mohammed",
       subtitle: "تاجر سكراب",
-      image: "https://placehold.co/100x100",
+      image: "https://randomuser.me/api/portraits/men/32.jpg",
       text: "Excellent service and best prices in Dammam! They handled everything professionally and efficiently. I've been dealing with them for over 2 years now and never had any issues.",
       rating: 5
     },
     {
       name: "Abdullah",
       subtitle: "صاحب مصنع",
-      image: "https://placehold.co/100x100",
+      image: "https://randomuser.me/api/portraits/men/85.jpg",
       text: "Very professional team. Quick response and fair prices. Would highly recommend their services to anyone looking for reliable scrap buyers. They handle large industrial quantities with ease.",
       rating: 5
     },
     {
       name: "Ahmed",
       subtitle: "مقاول",
-      image: "https://placehold.co/100x100",
+      image: "https://randomuser.me/api/portraits/men/75.jpg",
       text: "Great experience! They handled everything professionally and made the whole process smooth and easy. Their team is knowledgeable and provides excellent customer service.",
       rating: 5
     },
     {
       name: "Khalid",
       subtitle: "صاحب شركة",
-      image: "https://placehold.co/100x100",
+      image: "https://randomuser.me/api/portraits/men/62.jpg",
       text: "Best scrap buyers in the region. Highly recommended! Their team is efficient and their prices are very competitive. They also provide excellent documentation for all transactions.",
       rating: 5
     },
     {
       name: "Hassan",
       subtitle: "مالك مستودع",
-      image: "https://placehold.co/100x100",
+      image: "https://randomuser.me/api/portraits/men/55.jpg",
       text: "Outstanding service! They helped clear out my entire warehouse of scrap materials. Very organized and professional approach. The best part was their quick payment process.",
       rating: 5
     },
     {
       name: "Fahad",
       subtitle: "مدير مشروع",
-      image: "https://placehold.co/100x100",
+      image: "https://randomuser.me/api/portraits/men/36.jpg",
       text: "Excellent experience with this team. They handled our construction site scrap removal perfectly. Very reliable and professional service with competitive pricing.",
       rating: 5
     },
     {
       name: "Omar",
       subtitle: "صاحب ورشة",
-      image: "https://placehold.co/100x100",
+      image: "https://randomuser.me/api/portraits/men/22.jpg",
       text: "I've been in the industry for 15 years, and these guys are the best scrap buyers I've dealt with. Fair prices, professional team, and always on time.",
       rating: 5
     },
     {
       name: "Yousuf",
       subtitle: "مقاول كهرباء",
-      image: "https://placehold.co/100x100",
+      image: "https://randomuser.me/api/portraits/men/18.jpg",
       text: "As an electrical contractor, I regularly have copper and aluminum scrap. They always offer the best prices and their pickup service is extremely reliable.",
       rating: 5
     },
     {
       name: "Ibrahim",
       subtitle: "مدير مصنع",
-      image: "https://placehold.co/100x100",
+      image: "https://randomuser.me/api/portraits/men/12.jpg",
       text: "Their industrial scrap collection service is outstanding. They handle large volumes efficiently and their prices are always competitive. Great documentation too!",
       rating: 5
     }
@@ -429,14 +429,14 @@ function App() {
       </header>
 
       {/* About Section */}
-      <section id="about" className="py-16 md:py-20 bg-white">
+      <section id="about" className="about-section py-16 md:py-20 bg-white">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 relative text-center">
+            <h2 className="translated-text text-3xl md:text-4xl font-bold mb-8 relative text-center">
               {t('about.title')}
               <div className="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 w-20 h-1 bg-blue-600"></div>
             </h2>
-            <p className="text-lg md:text-xl leading-relaxed text-gray-600 mb-8 text-justify px-0 md:px-4">
+            <p className="translated-text text-lg md:text-xl leading-relaxed text-gray-600 mb-8 text-justify px-0 md:px-4">
               {t('about.description')}
             </p>
             <div className="text-center">
@@ -452,186 +452,246 @@ function App() {
       </section>
 
       {/* Our Scrap Buying Services Section */}
-      <section id="our-services" className="py-16 md:py-20 bg-gray-50">
+      <section id="our-services" className="py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
               {t('services.title')}
             </h2>
-            <p className="text-gray-600 text-lg">
+            <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+            <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
               {t('services.subtitle')}
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-            {/* Service Cards */}
-            {/* AC Scrap */}
-            <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-              <img
-                src={acScrapImage}
-                alt={t('services.items.ac.title')}
-                className="w-full h-48 object-cover rounded-lg mb-4"
-              />
-              <h3 className="text-lg md:text-xl font-semibold mb-2">
-                {t('services.items.ac.title')}
-              </h3>
-              <p className="text-sm md:text-base text-gray-600">
-                {t('services.items.ac.description')}
-              </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            {/* Service Cards with enhanced styling */}
+            <div className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+              <div className="relative overflow-hidden">
+                <img
+                  src={acScrapImage}
+                  alt={t('services.items.ac.title')}
+                  className="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-3 text-gray-900 group-hover:text-blue-600 transition-colors">
+                  {t('services.items.ac.title')}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {t('services.items.ac.description')}
+                </p>
+              </div>
             </div>
 
-            {/* Aluminium Scrap */}
-            <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-              <img
-                src={aluminiumScrapImage}
-                alt={t('services.items.aluminium.title')}
-                className="w-full h-48 object-cover rounded-lg mb-4"
-              />
-              <h3 className="text-lg md:text-xl font-semibold mb-2">
-                {t('services.items.aluminium.title')}
-              </h3>
-              <p className="text-sm md:text-base text-gray-600">
-                {t('services.items.aluminium.description')}
-              </p>
+            <div className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+              <div className="relative overflow-hidden">
+                <img
+                  src={aluminiumScrapImage}
+                  alt={t('services.items.aluminium.title')}
+                  className="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-3 text-gray-900 group-hover:text-blue-600 transition-colors">
+                  {t('services.items.aluminium.title')}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {t('services.items.aluminium.description')}
+                </p>
+              </div>
             </div>
 
-            <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-              <img
-                src={batteryScrapImage}
-                alt={t('services.items.battery.title')}
-                className="w-full h-48 object-cover rounded-lg mb-4"
-              />
-              <h3 className="text-lg md:text-xl font-semibold mb-2">
-                {t('services.items.battery.title')}
-              </h3>
-              <p className="text-sm md:text-base text-gray-600">
-                {t('services.items.battery.description')}
-              </p>
+            <div className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+              <div className="relative overflow-hidden">
+                <img
+                  src={batteryScrapImage}
+                  alt={t('services.items.battery.title')}
+                  className="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-3 text-gray-900 group-hover:text-blue-600 transition-colors">
+                  {t('services.items.battery.title')}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {t('services.items.battery.description')}
+                </p>
+              </div>
             </div>
 
-            <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-              <img
-                src={buildingScrapImage}
-                alt={t('services.items.building.title')}
-                className="w-full h-48 object-cover rounded-lg mb-4"
-              />
-              <h3 className="text-lg md:text-xl font-semibold mb-2">
-                {t('services.items.building.title')}
-              </h3>
-              <p className="text-sm md:text-base text-gray-600">
-                {t('services.items.building.description')}
-              </p>
+            <div className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+              <div className="relative overflow-hidden">
+                <img
+                  src={buildingScrapImage}
+                  alt={t('services.items.building.title')}
+                  className="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-3 text-gray-900 group-hover:text-blue-600 transition-colors">
+                  {t('services.items.building.title')}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {t('services.items.building.description')}
+                </p>
+              </div>
             </div>
 
-            <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-              <img
-                src={oldMachineryImage}
-                alt={t('services.items.machinery.title')}
-                className="w-full h-48 object-cover rounded-lg mb-4"
-              />
-              <h3 className="text-lg md:text-xl font-semibold mb-2">
-                {t('services.items.machinery.title')}
-              </h3>
-              <p className="text-sm md:text-base text-gray-600">
-                {t('services.items.machinery.description')}
-              </p>
+            <div className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+              <div className="relative overflow-hidden">
+                <img
+                  src={oldMachineryImage}
+                  alt={t('services.items.machinery.title')}
+                  className="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-3 text-gray-900 group-hover:text-blue-600 transition-colors">
+                  {t('services.items.machinery.title')}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {t('services.items.machinery.description')}
+                </p>
+              </div>
             </div>
 
-            <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-              <img
-                src={panelBoardsScrapImage}
-                alt={t('services.items.panels.title')}
-                className="w-full h-48 object-cover rounded-lg mb-4"
-              />
-              <h3 className="text-lg md:text-xl font-semibold mb-2">
-                {t('services.items.panels.title')}
-              </h3>
-              <p className="text-sm md:text-base text-gray-600">
-                {t('services.items.panels.description')}
-              </p>
+            <div className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+              <div className="relative overflow-hidden">
+                <img
+                  src={panelBoardsScrapImage}
+                  alt={t('services.items.panels.title')}
+                  className="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-3 text-gray-900 group-hover:text-blue-600 transition-colors">
+                  {t('services.items.panels.title')}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {t('services.items.panels.description')}
+                </p>
+              </div>
             </div>
 
-            <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-              <img
-                src={pipeScrapImage}
-                alt={t('services.items.pipes.title')}
-                className="w-full h-48 object-cover rounded-lg mb-4"
-              />
-              <h3 className="text-lg md:text-xl font-semibold mb-2">
-                {t('services.items.pipes.title')}
-              </h3>
-              <p className="text-sm md:text-base text-gray-600">
-                {t('services.items.pipes.description')}
-              </p>
+            <div className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+              <div className="relative overflow-hidden">
+                <img
+                  src={pipeScrapImage}
+                  alt={t('services.items.pipes.title')}
+                  className="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-3 text-gray-900 group-hover:text-blue-600 transition-colors">
+                  {t('services.items.pipes.title')}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {t('services.items.pipes.description')}
+                </p>
+              </div>
             </div>
 
-            <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-              <img
-                src={portaCabinScrapImage}
-                alt={t('services.items.portacabin.title')}
-                className="w-full h-48 object-cover rounded-lg mb-4"
-              />
-              <h3 className="text-lg md:text-xl font-semibold mb-2">
-                {t('services.items.portacabin.title')}
-              </h3>
-              <p className="text-sm md:text-base text-gray-600">
-                {t('services.items.portacabin.description')}
-              </p>
+            <div className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+              <div className="relative overflow-hidden">
+                <img
+                  src={portaCabinScrapImage}
+                  alt={t('services.items.portacabin.title')}
+                  className="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-3 text-gray-900 group-hover:text-blue-600 transition-colors">
+                  {t('services.items.portacabin.title')}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {t('services.items.portacabin.description')}
+                </p>
+              </div>
             </div>
 
-            <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-              <img
-                src={cableScrapImage}
-                alt={t('services.items.copper.title')}
-                className="w-full h-48 object-cover rounded-lg mb-4"
-              />
-              <h3 className="text-lg md:text-xl font-semibold mb-2">
-                {t('services.items.copper.title')}
-              </h3>
-              <p className="text-sm md:text-base text-gray-600">
-                {t('services.items.copper.description')}
-              </p>
+            <div className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+              <div className="relative overflow-hidden">
+                <img
+                  src={cableScrapImage}
+                  alt={t('services.items.copper.title')}
+                  className="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-3 text-gray-900 group-hover:text-blue-600 transition-colors">
+                  {t('services.items.copper.title')}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {t('services.items.copper.description')}
+                </p>
+              </div>
             </div>
 
-            <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-              <img
-                src={eScrapImage}
-                alt={t('services.items.electronic.title')}
-                className="w-full h-48 object-cover rounded-lg mb-4"
-              />
-              <h3 className="text-lg md:text-xl font-semibold mb-2">
-                {t('services.items.electronic.title')}
-              </h3>
-              <p className="text-sm md:text-base text-gray-600">
-                {t('services.items.electronic.description')}
-              </p>
+            <div className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+              <div className="relative overflow-hidden">
+                <img
+                  src={eScrapImage}
+                  alt={t('services.items.electronic.title')}
+                  className="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-3 text-gray-900 group-hover:text-blue-600 transition-colors">
+                  {t('services.items.electronic.title')}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {t('services.items.electronic.description')}
+                </p>
+              </div>
             </div>
 
-            <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-              <img
-                src={nahazScrapImage}
-                alt={t('services.items.nahaz.title')}
-                className="w-full h-48 object-cover rounded-lg mb-4"
-              />
-              <h3 className="text-lg md:text-xl font-semibold mb-2">
-                {t('services.items.nahaz.title')}
-              </h3>
-              <p className="text-sm md:text-base text-gray-600">
-                {t('services.items.nahaz.description')}
-              </p>
+            <div className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+              <div className="relative overflow-hidden">
+                <img
+                  src={nahazScrapImage}
+                  alt={t('services.items.nahaz.title')}
+                  className="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-3 text-gray-900 group-hover:text-blue-600 transition-colors">
+                  {t('services.items.nahaz.title')}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {t('services.items.nahaz.description')}
+                </p>
+              </div>
             </div>
 
-            <div className="bg-white p-4 md:p-6 rounded-lg shadow-lg hover:shadow-xl transition">
-              <img
-                src={officeDismantledScrapImage}
-                alt={t('services.items.office.title')}
-                className="w-full h-48 object-cover rounded-lg mb-4"
-              />
-              <h3 className="text-lg md:text-xl font-semibold mb-2">
-                {t('services.items.office.title')}
-              </h3>
-              <p className="text-sm md:text-base text-gray-600">
-                {t('services.items.office.description')}
-              </p>
+            <div className="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden">
+              <div className="relative overflow-hidden">
+                <img
+                  src={officeDismantledScrapImage}
+                  alt={t('services.items.office.title')}
+                  className="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-3 text-gray-900 group-hover:text-blue-600 transition-colors">
+                  {t('services.items.office.title')}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {t('services.items.office.description')}
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -757,77 +817,76 @@ function App() {
       {/* Client Reviews Section */}
       <section className="py-16 md:py-24 bg-[#1e3a8a] text-white overflow-hidden">
         <div className="container mx-auto px-4 md:px-6">
-          <h2 className="text-3xl md:text-5xl font-bold text-center mb-4">
+          <h2 className="translated-text text-3xl md:text-5xl font-bold text-center mb-4">
             {t('reviews.title')}
           </h2>
-          <p className="text-center text-blue-200 mb-12 max-w-4xl mx-auto text-lg">
+          <p className="translated-text text-center text-blue-200 mb-12 max-w-4xl mx-auto text-lg">
             {t('reviews.subtitle')}
           </p>
           
-          <div className="max-w-6xl mx-auto">
+          <div className="review-slider max-w-6xl mx-auto relative">
             <div className="relative px-6">
-              {/* Review Cards Container */}
               <div 
-                className="transition-transform duration-500 ease-in-out"
-                style={{ transform: `translateX(-${currentReviewIndex * (100 / totalPages)}%)` }}
+                className="review-container flex transition-transform duration-500 ease-in-out"
+                style={{ transform: `translateX(-${currentReviewIndex * 33.33}%)` }}
               >
-                <div className="flex gap-6">
-                  {reviews.map((review, index) => (
-                    <div
-                      key={index}
-                      className="min-w-[300px] md:min-w-[350px] bg-white/10 backdrop-blur-sm p-6 rounded-lg"
-                    >
-                      <div className="flex items-center gap-4 mb-4">
-                        <img
-                          src={review.image}
-                          alt={review.name}
-                          className="w-12 h-12 rounded-full"
-                        />
-                        <div>
-                          <h3 className="font-semibold">{review.name}</h3>
-                          <p className="text-sm text-blue-200">{review.subtitle}</p>
-                        </div>
-                      </div>
-                      <p className="text-sm md:text-base leading-relaxed">
-                        {review.text}
-                      </p>
-                      <div className="flex items-center mt-4">
-                        {[...Array(review.rating)].map((_, i) => (
-                          <span key={i} className="text-yellow-400">★</span>
-                        ))}
+                {reviews.map((review, index) => (
+                  <div
+                    key={index}
+                    className="review-card min-w-[300px] md:min-w-[350px] bg-white/10 backdrop-blur-sm p-6 rounded-lg mx-3"
+                  >
+                    <div className="flex items-center gap-4 mb-4">
+                      <img
+                        src={review.image}
+                        alt={review.name}
+                        className="w-12 h-12 rounded-full"
+                      />
+                      <div>
+                        <h3 className="translated-text font-semibold">{review.name}</h3>
+                        <p className="translated-text text-sm text-blue-200">{review.subtitle}</p>
                       </div>
                     </div>
-                  ))}
-                </div>
+                    <p className="translated-text text-sm md:text-base leading-relaxed mb-4">
+                      {review.text}
+                    </p>
+                    <div className="flex items-center gap-1">
+                      {[...Array(5)].map((_, i) => (
+                        <svg
+                          key={i}
+                          className="w-5 h-5 text-yellow-400"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                          />
+                        </svg>
+                      ))}
+                    </div>
+                  </div>
+                ))}
               </div>
-              
-              {/* Navigation Buttons */}
-              <button
-                onClick={prevReview}
-                className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 p-2 rounded-full"
-              >
-                ←
-              </button>
-              <button
-                onClick={nextReview}
-                className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 p-2 rounded-full"
-              >
-                →
-              </button>
             </div>
-            
-            {/* See More/Less Button */}
-            <div className="text-center mt-8">
-              <button
-                onClick={() => setExpandedReviews(prev => ({
-                  ...prev,
-                  [currentReviewIndex]: !prev[currentReviewIndex]
-                }))}
-                className="text-blue-200 hover:text-white transition-colors"
-              >
-                {expandedReviews[currentReviewIndex] ? t('reviews.showLess') : t('reviews.seeMore')}
-              </button>
-            </div>
+
+            {/* Navigation buttons */}
+            <button
+              onClick={prevReview}
+              className="absolute left-0 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white p-2 rounded-full z-10"
+              aria-label="Previous review"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <button
+              onClick={nextReview}
+              className="absolute right-0 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white p-2 rounded-full z-10"
+              aria-label="Next review"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
           </div>
         </div>
       </section>
@@ -936,11 +995,49 @@ function App() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-6 md:py-8">
-        <div className="container mx-auto px-4 md:px-6 text-center">
-          <p className="text-sm md:text-base">
-            {t('footer.copyright')}
-          </p>
+      <footer className="bg-gray-900 text-white py-8">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="flex flex-col items-center">
+            {/* Copyright Text */}
+            <p className="footer-text text-sm md:text-base mb-6">
+              {t('footer.copyright', { year: new Date().getFullYear() })}
+            </p>
+            
+            {/* Social Media Links */}
+            <div className="flex items-center space-x-6">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook className="w-6 h-6" />
+              </a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors"
+                aria-label="LinkedIn"
+              >
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+              </a>
+              <a
+                href="https://imo.im"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white transition-colors"
+                aria-label="IMO"
+              >
+                <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-4-9c.83 0 1.5-.67 1.5-1.5S8.83 8 8 8s-1.5.67-1.5 1.5S7.17 11 8 11zm8 0c.83 0 1.5-.67 1.5-1.5S16.83 8 16 8s-1.5.67-1.5 1.5.67 1.5 1.5 1.5zm-4 4c2.03 0 3.8-1.11 4.75-2.75.19-.33-.05-.75-.44-.75H7.69c-.38 0-.63.42-.44.75A5.489 5.489 0 0012 15z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
       </footer>
 
@@ -950,7 +1047,7 @@ function App() {
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-24 right-4 md:right-6 z-50 bg-green-500 text-white p-3 md:p-4 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 hover:scale-110"
-        aria-label="Chat on WhatsApp"
+        aria-label={t('buttons.whatsapp')}
       >
         <svg
           className="w-5 h-5 md:w-6 md:h-6"
@@ -966,7 +1063,7 @@ function App() {
         className={`fixed bottom-6 right-4 md:right-6 z-50 bg-red-500 text-white p-3 md:p-4 rounded-full shadow-lg hover:bg-red-600 transition-all duration-300 hover:scale-110 ${
           showScrollTop ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
-        aria-label="Scroll to top"
+        aria-label={t('buttons.scrollTop')}
       >
         <ArrowUp className="w-5 h-5 md:w-6 md:h-6" />
       </button>

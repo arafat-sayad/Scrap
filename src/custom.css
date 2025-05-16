@@ -1,6 +1,74 @@
 /* Import Arabic font */
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
 
+/* Base layout fixes */
+body {
+  overflow-x: hidden;
+}
+
+/* Force all containers to stay in position */
+.container,
+section,
+header,
+footer,
+.grid,
+.flex {
+  direction: ltr !important;
+}
+
+/* Fix review cards */
+.review-card {
+  direction: ltr !important;
+  transform: none !important;
+}
+
+/* Fix service cards */
+.service-card {
+  direction: ltr !important;
+  transform: none !important;
+}
+
+/* Fix about section */
+.about-section {
+  direction: ltr !important;
+}
+
+/* Fix text content */
+.translated-text {
+  direction: inherit;
+  text-align: start;
+}
+
+/* Fix footer text */
+.footer-text {
+  direction: inherit;
+  text-align: center !important;
+}
+
+/* Fix phone numbers */
+.phone-number {
+  direction: ltr !important;
+  text-align: left !important;
+  unicode-bidi: embed;
+}
+
+/* RTL text adjustments */
+[dir="rtl"] .translated-text {
+  font-family: 'Cairo', sans-serif;
+}
+
+/* Fix review slider */
+.review-slider {
+  direction: ltr !important;
+  transform: none !important;
+}
+
+.review-container {
+  direction: ltr !important;
+  display: flex !important;
+  gap: 1.5rem !important;
+}
+
 /* Custom styles for About Us section */
 .about-underline {
   position: relative;
